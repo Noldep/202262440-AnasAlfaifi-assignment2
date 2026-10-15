@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Anas Alfaifi's personal portfolio featuring web engineering projects, skills, and contact information."
+    />
+    <meta name="theme-color" content="#f4f2ec" />
+    <title>Anas Alfaifi | Web Engineering Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232657ff'/%3E%3Cpath d='M18 45 28 19h8l10 26h-8l-2-6H27l-2 6Zm11-13h5l-2.5-8Z' fill='white'/%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header" id="top">
+      <div class="container nav-wrap">
+        <a class="logo" href="#top" aria-label="Anas Alfaifi portfolio home">
+          <span class="logo-mark">A</span>
+          <span>Anas Alfaifi<span class="accent-dot">.</span></span>
+        </a>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Open navigation"
+          aria-controls="primary-navigation"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+
+        <nav class="primary-nav" id="primary-navigation" aria-label="Primary navigation">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#github">GitHub</a>
+          <a href="#contact">Contact</a>
+          <button class="theme-toggle" type="button" aria-label="Switch to dark theme">
+            <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="4"></circle>
+              <path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41"></path>
+            </svg>
+            <svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"></path>
+            </svg>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <a class="profile-chip" id="profile-card" href="https://www.linkedin.com/in/anas-farhan-b90901336/" target="_blank" rel="noopener noreferrer">
+              <span class="profile-photo">
+                <img src="assets/images/profile.jpg" alt="Photo of Anas Alfaifi" width="72" height="72" />
+                <span class="profile-badge"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.75h4v11H3v-11Zm6.5 0h3.8v1.5h.06c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.77 2.65 4.77 6.1v5.45h-4v-4.83c0-1.15-.02-2.63-1.6-2.63-1.6 0-1.85 1.25-1.85 2.55v4.91h-3.95v-11Z"></path></svg></span>
+              </span>
+              <span class="profile-text">
+                <strong>Anas Alfaifi</strong>
+                <small>Software Engineering · KFUPM</small>
+              </span>
+              <span class="visually-hidden">(opens LinkedIn profile)</span>
+              <span class="profile-hint" aria-hidden="true"></span>
+            </a>
+            <p class="visually-hidden" id="profile-status" role="status"></p>
+            <p class="eyebrow"><span></span><span><span id="greeting">Hello</span>, I’m Anas Alfaifi</span></p>
+            <h1 id="hero-title">I turn ideas into <em>useful</em> web experiences.</h1>
+            <p class="hero-intro">
+              A software engineering student at KFUPM, learning to build accessible,
+              responsive, and human-centered products for the web.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#projects">See my work <span aria-hidden="true">↘</span></a>
+              <a class="button button-ghost" href="#contact">Let’s connect</a>
+            </div>
+          </div>
+
+          <div class="hero-card" aria-label="Developer profile summary">
+            <div class="window-bar" aria-hidden="true">
+              <span></span><span></span><span></span>
+              <small>portfolio.js</small>
+            </div>
+            <pre><code><span class="code-muted">01</span>  <span class="code-blue">const</span> developer = {
+<span class="code-muted">02</span>    name: <span class="code-green">"Anas Alfaifi"</span>,
+<span class="code-muted">03</span>    focus: <span class="code-green">"Web Engineering"</span>,
+<span class="code-muted">04</span>    studiesAt: <span class="code-green">"KFUPM"</span>,
+<span class="code-muted">05</span>    curiosity: <span class="code-yellow">true</span>,
+<span class="code-muted">06</span>    currentlyLearning: [
+<span class="code-muted">07</span>      <span class="code-green">"HTML"</span>, <span class="code-green">"CSS"</span>, <span class="code-green">"JavaScript"</span>
+<span class="code-muted">08</span>    ]
+<span class="code-muted">09</span>  };</code></pre>
+            <div class="status-line"><span></span> Available for learning & collaboration</div>
+          </div>
+        </div>
+        <div class="container hero-footnote">
+          <span>Based in Saudi Arabia</span>
+          <a href="#about">Scroll to explore <span aria-hidden="true">↓</span></a>
+        </div>
+      </section>
+
+      <section class="section about" id="about" aria-labelledby="about-title">
+        <div class="container split-heading" data-reveal>
+          <div>
+            <p class="section-number">01 / About</p>
+            <h2 id="about-title">Curious by nature.<br />Practical by choice.</h2>
+          </div>
+          <div class="about-copy">
+            <p>
+              I’m a software engineering student who enjoys understanding how good
+              digital experiences are planned, designed, and built. I care about clean
+              code, clear communication, and interfaces that feel effortless to use.
+            </p>
+            <p>
+              This portfolio documents my progress as I turn classroom concepts into
+              working projects and continue developing my front-end skills.
+            </p>
+            <dl class="quick-facts">
+              <div><dt>Focus</dt><dd>Front-end development</dd></div>
+              <div><dt>Education</dt><dd>Software Engineering, KFUPM</dd></div>
+              <div><dt>Approach</dt><dd>Learn, build, improve</dd></div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <section class="section projects" id="projects" aria-labelledby="projects-title">
+        <div class="container">
+          <div class="section-heading" data-reveal>
+            <div>
+              <p class="section-number">02 / Selected work</p>
+              <h2 id="projects-title">Projects built with purpose.</h2>
+            </div>
+            <p>A growing collection of course work and personal experiments.</p>
+          </div>
+
+          <div class="project-toolbar">
+            <div class="filter-group" role="group" aria-label="Filter projects by category">
+              <button class="filter-chip" type="button" data-filter="all" aria-pressed="true">All</button>
+              <button class="filter-chip" type="button" data-filter="web-app" aria-pressed="false">Web apps</button>
+              <button class="filter-chip" type="button" data-filter="ui" aria-pressed="false">UI design</button>
+              <button class="filter-chip" type="button" data-filter="javascript" aria-pressed="false">JavaScript</button>
+            </div>
+            <div class="toolbar-controls">
+              <label class="search-field">
+                <span class="visually-hidden">Search projects</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg>
+                <input id="project-search" type="search" placeholder="Search projects or tech…" autocomplete="off" />
+              </label>
+              <label class="sort-field">
+                <span class="visually-hidden">Sort projects</span>
+                <select id="project-sort">
+                  <option value="featured">Featured</option>
+                  <option value="az">Name A–Z</option>
+                  <option value="za">Name Z–A</option>
+                </select>
+              </label>
+            </div>
+          </div>
+          <p class="project-count" id="project-count" aria-live="polite"></p>
+
+          <div class="project-grid" id="project-grid">
+            <article class="project-card project-lime" data-category="ui javascript" data-title="Responsive Portfolio">
+              <div class="project-visual" aria-label="Responsive Portfolio interface preview">
+                <div class="mock-browser">
+                  <div class="mock-top"><span></span><span></span><span></span></div>
+                  <div class="mock-hero">
+                    <div class="mock-hero-copy"><i></i><i></i><i></i><b></b></div>
+                    <div class="mock-hero-code"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="project-content">
+                <div class="project-meta"><span>SWE 363 · Assignment 1</span><span>2026</span></div>
+                <h3>Responsive Portfolio</h3>
+                <p>
+                  The first version of this site: a single-page portfolio with
+                  responsive layouts, a saved light/dark theme, and contact form validation.
+                </p>
+                <ul class="tag-list" aria-label="Technologies used">
+                  <li>HTML</li><li>CSS Grid</li><li>JavaScript</li>
+                </ul>
+                <a class="project-link" href="https://github.com/Noldep/202262440-AnasAlfaifi-assignment1" target="_blank" rel="noopener noreferrer">View code <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+
+            <article class="project-card project-ink" data-category="web-app javascript" data-title="Interactive Portfolio">
+              <div class="project-visual" aria-label="Interactive Portfolio interface preview">
+                <div class="mock-browser">
+                  <div class="mock-top"><span></span><span></span><span></span></div>
+                  <div class="mock-portfolio">
+                    <div class="mock-title"></div>
+                    <div class="mock-chips"><i></i><i></i><i></i></div>
+                    <div class="mock-cards"><b></b><b></b><b></b></div>
+                  </div>
+                </div>
+              </div>
+              <div class="project-content">
+                <div class="project-meta"><span>SWE 363 · Assignment 2</span><span>2026</span></div>
+                <h3>Interactive Portfolio</h3>
+                <p>
+                  This website: project filtering and live search, GitHub API data,
+                  a saved theme, and a contact form that remembers unsent drafts.
+                </p>
+                <ul class="tag-list" aria-label="Technologies used">
+                  <li>JavaScript</li><li>Fetch API</li><li>localStorage</li>
+                </ul>
+                <a class="project-link" href="https://github.com/Noldep/202262440-AnasAlfaifi-assignment2" target="_blank" rel="noopener noreferrer">View code <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+          </div>
+
+          <div class="empty-state" id="project-empty" hidden>
+            <p><strong>No projects found.</strong> Try another keyword or category.</p>
+            <button class="button button-ghost" type="button" id="clear-filters">Clear filters</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section skills" id="skills" aria-labelledby="skills-title">
+        <div class="container skills-grid" data-reveal>
+          <div>
+            <p class="section-number">03 / Skills</p>
+            <h2 id="skills-title">What I’m working with.</h2>
+            <p class="skills-intro">
+              Building a strong foundation, one project and one careful question at a time.
+            </p>
+          </div>
+          <div class="skills-list">
+            <div><span class="skill-index">01</span><h3>HTML</h3><p>Semantic structure & accessibility</p></div>
+            <div><span class="skill-index">02</span><h3>CSS</h3><p>Responsive layouts & visual systems</p></div>
+            <div><span class="skill-index">03</span><h3>JavaScript</h3><p>Core logic & user interactions</p></div>
+            <div><span class="skill-index">04</span><h3>Git</h3><p>Version control & collaboration</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section github" id="github" aria-labelledby="github-title">
+        <div class="container">
+          <div class="section-heading" data-reveal>
+            <div>
+              <p class="section-number">04 / Live from GitHub</p>
+              <h2 id="github-title">Latest repositories.</h2>
+            </div>
+            <p>Loaded live from the public GitHub API, so this list updates whenever I push new work.</p>
+          </div>
+
+          <div class="repo-status" id="repo-status" role="status" aria-live="polite"></div>
+          <ul class="repo-grid" id="repo-list" aria-label="GitHub repositories"></ul>
+
+          <a class="button button-ghost github-link" href="https://github.com/Noldep" target="_blank" rel="noopener noreferrer">
+            View my GitHub profile <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact" aria-labelledby="contact-title">
+        <div class="container contact-grid" data-reveal>
+          <div class="contact-copy">
+            <p class="section-number">05 / Contact</p>
+            <h2 id="contact-title">Have an idea?<br /><em>Let’s talk.</em></h2>
+            <p>
+              Send a message using the form. This demo validates your input locally;
+              no information is sent to a server. Unsent drafts are saved in your browser.
+            </p>
+            <a href="mailto:anasalfaifi1@gmail.com">anasalfaifi1@gmail.com <span aria-hidden="true">↗</span></a>
+            <a class="profile-jump" href="#profile-card">
+              <span aria-hidden="true">↑</span> Connect with me on LinkedIn
+            </a>
+          </div>
+
+          <form class="contact-form" id="contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" autocomplete="name" placeholder="Your name" required />
+                <small class="error-message" aria-live="polite"></small>
+              </div>
+              <div class="form-field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required />
+                <small class="error-message" aria-live="polite"></small>
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" maxlength="500" placeholder="Tell me about your idea..." aria-describedby="message-count" required></textarea>
+              <div class="field-footer">
+                <small class="error-message" aria-live="polite"></small>
+                <small class="char-count" id="message-count">0 / 500</small>
+              </div>
+            </div>
+            <div class="form-actions">
+              <button class="button button-primary submit-button" type="submit">
+                <span class="button-label">Send message</span> <span aria-hidden="true">↗</span>
+              </button>
+              <button class="clear-draft" type="button" id="clear-draft" hidden>Clear draft</button>
+            </div>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <a class="back-to-top" href="#top" aria-label="Back to top">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"></path></svg>
+    </a>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <a class="logo" href="#top"><span class="logo-mark">A</span><span>Anas Alfaifi<span class="accent-dot">.</span></span></a>
+        <p>Designed & built with curiosity.</p>
+        <div class="footer-end">
+          <p>© <span id="current-year"></span> Anas Alfaifi</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
